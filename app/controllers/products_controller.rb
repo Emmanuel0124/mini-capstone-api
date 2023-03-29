@@ -1,2 +1,5 @@
 class ProductsController < ApplicationController
-end
+  def singular
+    render json: {message: "hello"}
+  end 
+end 
