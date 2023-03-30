@@ -9,5 +9,7 @@ class ProductsController < ApplicationController
   end  
   def create
     @product = Product.new(name: "fire_truck", price: "4", image_url: "https://www.3000toys.com/images/ERTL/46731-CNP.jpg", description: "its loud and red")
+    @product.save
+    render :show
   end
 end  
