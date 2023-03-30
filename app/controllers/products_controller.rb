@@ -19,10 +19,10 @@ class ProductsController < ApplicationController
   end
   def update
     @product = Product.find_by(id: params[:id])
-    @product.name = "action_figure"
-    @product.price = 8
-    @product.image_url = "https://ae01.alicdn.com/kf/Sc4521cc7aa7e4d39a058d63ca6693c1fE/Japan-Anime-Dragon-Ball-Z-Original-BANDAI-SPIRITS-S-H-Figuarts-SHF-Exclusive-Action-Figure-Great.jpg"
-    @product.description = "posable super hero"
+    @product.name = params[:name]
+    @product.price = params[:price]
+    @product.image_url = params[:image_url]
+    @product.description = params[:description]
     @product.save
     render :show
   end 
