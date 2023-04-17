@@ -75,3 +75,5 @@ end
 gem "rack-cors"
 
 gem 'seed_dump'
+
+gem 'jwt'
