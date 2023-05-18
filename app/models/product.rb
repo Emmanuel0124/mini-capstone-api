@@ -1,4 +1,6 @@
 class Product < ApplicationRecord
+  belongs_to :catagory_products
+  has_many :orders
   def is_discounted?
     !(price >= 10)
     # if price > 10 
